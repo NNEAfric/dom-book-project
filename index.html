@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Course Search</title>
+  <script src="/app.js"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <main id="wrapper">
+    <header>
+      <div id="page-banner">
+        <h1 class="title">Coursearch</h1>
+        <p contenteditable>Courses for Code Geeks</p>
+        <form action="" id="search-books">
+          <input type="text" placeholder="Search courses...">
+        </form>
+      </div>
+    </header>
+    <div id="book-list">
+      <h2 class="title">Books to read</h2>
+      <ul>
+        <li>
+          <span class="name">HTML</span>
+          <span class="delete">delete</span>
+        </li>
+        <li>
+          <span class="name">CSS</span>
+          <span class="delete">delete</span>
+        </li>
+        <li>
+          <span class="name">JavaScript</span>
+          <span class="delete">delete</span>
+        </li>
+        <li>
+          <span class="name">Nodejs</span>
+          <span class="delete">delete</span>
+        </li>
+      </ul>
+    </div>
+    <form action="" id="add-book">
+      <input type="checkbox" id="hide">
+      <label for="hide">Hide all books</label>
+      <input type="text" placeholder="Add a course...">
+      <button>Add</button>
+    </form>
+    <div id="tabbed-content">
+      <ul class="tabs">
+        <li data-target="#about" class="active">About</li>
+        <li data-target="#contact">Contact</li>
+      </ul>
+      <div class="panel active" id="about">
+        <p>Content for about tab</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat quibusdam quos, odit sequi repudiandae laudantium sapiente eos reprehenderit ratione temporibus, maiores pariatur blanditiis quasi quam dolores adipisci quis atque magni?</p>
+      </div>
+      <div class="panel" id="contact">
+        <p>Content for contact tab</p>
+        <p>sapiente eos reprehenderit ratione temporibus, maiores pariatur blanditiis quasi quam dolores
+          adipisci quis atque magni?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat quibusdam quos,
+          odit sequi repudiandae
+          laudantium </p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
